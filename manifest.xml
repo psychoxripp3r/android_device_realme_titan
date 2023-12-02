@@ -41,8 +41,9 @@
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.1::IComposer/default</fqname>
+        <transport>hwbinder</transport
+        >
+        <fqname>@2.3::IComposer/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>

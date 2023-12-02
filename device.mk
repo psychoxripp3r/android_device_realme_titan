@@ -64,6 +64,16 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+
+# Display
+PRODUCT_PACKAGES += \
+     android.hardware.graphics.composer@2.3-service \
+     android.hardware.memtrack-service.mediatek-mali \
+    
+PRODUCT_PACKAGES += \
+     android.hardware.graphics.allocator@4.0.vendor \
+     libdrm.vendor
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
