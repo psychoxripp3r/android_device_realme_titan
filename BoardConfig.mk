@@ -12,14 +12,14 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # A/B
 AB_OTA_UPDATER := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 AB_OTA_PARTITIONS += \
-    system \
-    vendor \
-    product \
-    odm \
     boot \
-    vbmeta_vendor \
-    vbmeta_system
+    dtbo \
+    system \
+    product \
+    vendor \
+    vbmeta
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
@@ -141,4 +141,4 @@ BOARD_VNDK_VERSION := current
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/oplus/ossi/BoardConfigVendor.mk
+include vendor/realme/titan/BoardConfigVendor.mk
