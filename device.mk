@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
     swap_enable.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.emmc \
+    fstab.mt6877 \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
     factory_init.project.rc \
