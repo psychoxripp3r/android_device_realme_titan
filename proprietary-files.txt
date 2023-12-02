@@ -1,5 +1,8 @@
 # Unpinned blobs from sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1696911358260 release-keys
 
+# Batterysecret
+vendor/bin/batterysecret
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
