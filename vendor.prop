@@ -599,3 +599,23 @@ vendor.media.heif.highThreshold=20
 vendor.mtk.camera.app.fd.video=1
 vendor.mtk.hwc.HWC_PLAT_SWITCH_EXTEND_SF_TARGET_TS_FOR_VIDEO=1
 vendor.mtk.vdec.waitkeyframeforplay=15
+
+
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.coredump.mode=0
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsysfw.enable=true
+ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
+ro.vendor.connsys.dedicated.log=1
+vendor.connsys.driver.ready=no
+
+# Wi-Fi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m
+
+
+
