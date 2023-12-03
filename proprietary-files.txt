@@ -9,6 +9,14 @@ vendor/lib64/libaedv.so
 # Batterysecret
 vendor/bin/batterysecret
 
+
+# Connectivity
+vendor/bin/conninfra_loader
+vendor/firmware/conninfra.cfg
+vendor/firmware/soc5_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/soc5_0_ram_wmmcu_1_1_hdr.bin
+
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
