@@ -88,6 +88,14 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+
+PRODUCT_PACKAGES += \
+   android.hardware.graphics.allocator@4.0.vendor \
+   libdrm.vendor \
+   libutils-v32
+
+
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -182,6 +190,13 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
+
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
+
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/oplus/ossi/ossi-vendor.mk)
