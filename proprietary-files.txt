@@ -1,5 +1,11 @@
 # Unpinned blobs from sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1696911358260 release-keys
 
+
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
+
 # Batterysecret
 vendor/bin/batterysecret
 
