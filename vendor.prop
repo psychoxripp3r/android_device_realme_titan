@@ -624,6 +624,11 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 
 
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+
+
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0

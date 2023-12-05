@@ -257,6 +257,15 @@ vendor/firmware/WIFI_RAM_CODE_soc5_0_1_1.bin
 vendor/firmware/wifi.cfg
 
 
+# Sensors
+vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
+vendor/lib64/hw/sensors.mt6877.so
+vendor/lib64/libhfmanager.so
+vendor/lib64/libhwm.so
+vendor/lib64/libksensor.so
+ven
+
+
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
