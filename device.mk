@@ -40,7 +40,8 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     FrameworksResOverlay\
     SystemUIOverlay \
-    WifiResOverlayRuby
+    SettingsOverlay \
+    WifiResOverlay
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
