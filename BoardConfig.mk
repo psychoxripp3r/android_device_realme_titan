@@ -82,7 +82,8 @@ endif
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
