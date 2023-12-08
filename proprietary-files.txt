@@ -238,6 +238,10 @@ vendor/lib64/libdolbyplugin.so
 vendor/lib64/libfiltersimulation.so
 vendor/lib64/libformatter.so
 
+
+
+
+
 # Radio
 vendor/bin/hw/mtkfusionrild
 vendor/bin/ccci_mdinit
@@ -292,7 +296,14 @@ vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
 vendor/lib64/libwpfa.so
+vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+
+
+# Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
