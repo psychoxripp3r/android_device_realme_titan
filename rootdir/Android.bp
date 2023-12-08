@@ -89,6 +89,14 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
+}
+
+
+prebuilt_etc {
     name: "init.mt6877.rc",
     src: "etc/init.mt6877.rc",
     sub_dir: "init/hw",
