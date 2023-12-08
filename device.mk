@@ -58,8 +58,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES += \
