@@ -69,6 +69,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
+    libhidltransport \ 
     libhwbinder.vendor \
     android.hidl.allocator@1.0.vendor
 
