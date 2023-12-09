@@ -180,6 +180,13 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 
+
+-product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
+-product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
+
+
 (IMS service)
 bin/vtservice
 etc/init/init.vtservice.rc
