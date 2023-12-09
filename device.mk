@@ -35,6 +35,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+
+PRODUCT_PACKAGES += \
+    libshim_sink
+
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
