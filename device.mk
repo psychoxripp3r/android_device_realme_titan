@@ -260,6 +260,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
     android.hardware.power@1.3.vendor
 
+# Power Off Alarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
