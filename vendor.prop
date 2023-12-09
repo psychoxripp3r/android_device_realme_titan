@@ -639,6 +639,9 @@ ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
+# GNSS
+ro.vendor.mtk_log_hide_gps=1
+
 
 # Media
 debug.mediatek.disp_decompress=1
