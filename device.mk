@@ -250,6 +250,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
     android.hardware.power@1.3.vendor
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 
 # Radio
 PRODUCT_PACKAGES += \
