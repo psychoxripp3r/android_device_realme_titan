@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlay\
+    CarrierConfigOverlay \
     SystemUIOverlay \
     SettingsOverlay \
     TelephonyOverlay \
