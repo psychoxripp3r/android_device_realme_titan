@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.1-impl
 
+
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
