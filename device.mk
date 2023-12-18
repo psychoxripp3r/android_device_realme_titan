@@ -221,6 +221,9 @@ PRODUCT_PACKAGES += \
    libutils-v32
 
 
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
