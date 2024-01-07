@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm@1.4-service.clearkey
 
 
 # Dynamic Partitions
