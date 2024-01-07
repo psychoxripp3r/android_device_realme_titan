@@ -5,6 +5,7 @@ import ${ro.vendor.rc}init.mt6877.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /system_ext/etc/init/hw/init.aee.rc
 import /FWUpgradeInit.rc
+import /vendor/etc/init/hw/init.fingerprint.rc
 import /vendor/etc/init/hw/init.aee.rc
 import ${ro.vendor.rc}init.volte.rc
 import ${ro.vendor.rc}init.mal.rc

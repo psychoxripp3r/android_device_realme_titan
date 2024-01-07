@@ -146,6 +146,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.fingerprint.rc",
+    src: "etc/init.fingerprint.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "meta_init.modem.rc",
     src: "etc/meta_init.modem.rc",
     sub_dir: "init/hw",
