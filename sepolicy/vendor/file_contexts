@@ -1,3 +1,6 @@
 
 # Batterysecret
 /(vendor|system/vendor)/bin/batterysecret u:object_r:batterysecret_exec:s0
+
+# Thermal
+/(vendor|system/vendor)/bin/thermald u:object_r:thermald_exec:s0

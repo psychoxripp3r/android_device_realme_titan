@@ -1,0 +1,28 @@
+type thermald, domain;
+type thermald_exec, exec_type, vendor_file_type, file_type;
+type thermal_data_file, data_file_type, file_type;
+
+init_daemon_domain(thermald)
+
+set_prop(thermald, thermal_engine_prop)
+
+allow thermald thermal_data_file:dir rw_dir_perms;
+allow thermald thermal_data_file:file create_file_perms;
+
+allow thermald self:capability { fsetid sys_boot };
+allow thermald thermald:capability { chown fowner };
+allow thermald thermald:capability2 { wake_alarm block_suspend };
+
+r_dir_file(thermald, sysfs_therm)
+allow thermald sysfs_therm:file w_file_perms;
+
+r_dir_file(thermald, sysfs_thermal)
+allow thermald sysfs_thermal:file w_file_perms;
+
+r_dir_file(thermald, sysfs)
+allow thermald sysfs:file w_file_perms;
+
+r_dir_file(thermald, sysfs_leds)
+allow thermald sysfs_leds:file w_file_perms;
+
+allow thermald sysfs_devices_system_cpu:file rw_file_perms;
