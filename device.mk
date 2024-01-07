@@ -317,6 +317,7 @@ PRODUCT_PACKAGES += \
     factory_init.connectivity.rc \
     factory_init.project.rc \
     factory_init.rc \
+    init.fingerprint.rc \
     init.aee.rc \
     init.ago.rc \
     init.cgroup.rc \
