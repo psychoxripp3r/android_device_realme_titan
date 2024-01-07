@@ -640,6 +640,9 @@ ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
+# DRM
+ro.netflix.bsp_rev=MTK6877-33678-1
+
 # GNSS
 ro.vendor.mtk_log_hide_gps=1
 
