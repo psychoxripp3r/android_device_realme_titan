@@ -61,7 +61,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlay\
+    FrameworksResOverlay \
+    SettingsProviderOverlay \
     CarrierConfigOverlay \
     SystemUIOverlay \
     SettingsOverlay \
