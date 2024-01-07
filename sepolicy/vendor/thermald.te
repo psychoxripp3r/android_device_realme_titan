@@ -4,25 +4,31 @@ type thermal_data_file, data_file_type, file_type;
 
 init_daemon_domain(thermald)
 
-set_prop(thermald, thermal_engine_prop)
-
-allow thermald thermal_data_file:dir rw_dir_perms;
-allow thermald thermal_data_file:file create_file_perms;
-
 allow thermald self:capability { fsetid sys_boot };
 allow thermald thermald:capability { chown fowner };
 allow thermald thermald:capability2 { wake_alarm block_suspend };
 
-r_dir_file(thermald, sysfs_therm)
-allow thermald sysfs_therm:file w_file_perms;
-
-r_dir_file(thermald, sysfs_thermal)
-allow thermald sysfs_thermal:file w_file_perms;
+# Allow thermald to read thermal_core_data_file
+allow thermald thermal_core_data_file:dir rw_dir_perms;
+allow thermald thermal_core_data_file:file create_file_perms;
 
 r_dir_file(thermald, sysfs)
-allow thermald sysfs:file w_file_perms;
-
 r_dir_file(thermald, sysfs_leds)
-allow thermald sysfs_leds:file w_file_perms;
+r_dir_file(thermald, sysfs_therm)
+r_dir_file(thermald, sysfs_thermal)
+r_dir_file(thermald, sysfs_power_supply)
 
-allow thermald sysfs_devices_system_cpu:file rw_file_perms;
+# Allow thermald to read and write to sysfs_*
+allow thermald {
+  sysfs
+  sysfs_leds
+  sysfs_therm
+  sysfs_thermal
+  sysfs_power_supply
+  sysfs_devices_system_cpu
+}:{
+  file
+  lnk_file
+} rw_file_perms;
+
+set_prop(thermald, thermal_engine_prop)
