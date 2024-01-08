@@ -17,7 +17,6 @@ allow thermald sysfs_batteryinfo:dir { search };
 allow thermald sysfs_batteryinfo:file r_file_perms;
 
 
-r_dir_file(thermald, sysfs)
 r_dir_file(thermald, sysfs_leds)
 r_dir_file(thermald, sysfs_therm)
 r_dir_file(thermald, sysfs_thermal)
@@ -25,7 +24,6 @@ r_dir_file(thermald, sysfs_power_supply)
 
 # Allow thermald to read and write to sysfs_*
 allow thermald {
-  sysfs
   sysfs_leds
   sysfs_therm
   sysfs_thermal
