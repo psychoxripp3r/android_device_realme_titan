@@ -12,6 +12,11 @@ allow thermald thermald:capability2 { wake_alarm block_suspend };
 allow thermald thermal_core_data_file:dir rw_dir_perms;
 allow thermald thermal_core_data_file:file create_file_perms;
 
+
+allow thermald sysfs_batteryinfo:dir { search };
+allow thermald sysfs_batteryinfo:file r_file_perms;
+
+
 r_dir_file(thermald, sysfs)
 r_dir_file(thermald, sysfs_leds)
 r_dir_file(thermald, sysfs_therm)
