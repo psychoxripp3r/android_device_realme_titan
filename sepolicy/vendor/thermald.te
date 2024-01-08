@@ -14,7 +14,7 @@ allow thermald thermal_core_data_file:file create_file_perms;
 
 
 allow thermald sysfs_batteryinfo:dir { search };
-allow thermald sysfs_batteryinfo:file r_file_perms;
+allow thermald sysfs_batteryinfo:file rw_file_perms;
 
 
 r_dir_file(thermald, sysfs_leds)
