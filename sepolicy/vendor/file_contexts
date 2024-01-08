@@ -16,5 +16,9 @@
 /dev/oplus_display/disp_feature u:object_r:vendor_displayfeature_device:s0
 
 
+# Power
+/dev/oplus-touch u:object_r:vendor_touchfeature_device:s0
+
+
 # Thermal
 /(vendor|system/vendor)/bin/thermald u:object_r:thermald_exec:s0
