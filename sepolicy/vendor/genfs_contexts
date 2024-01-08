@@ -5,6 +5,10 @@ genfscon sysfs /devices/virtual/oplus_display/disp_feature/disp-DSI-0/panel_info
 # Extcon
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0
 
+# Fingerprint
+genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/authen_fd u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/authen_fd/performance u:object_r:vendor_sysfs_fingerprint:s0
+
 
 
 # Health
