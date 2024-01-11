@@ -31,3 +31,8 @@
 
 # Thermal
 /(vendor|system/vendor)/bin/thermald u:object_r:thermald_exec:s0
+
+
+# USB
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb-service\.ruby u:object_r:mtk_hal_usb_exec:s0
+
