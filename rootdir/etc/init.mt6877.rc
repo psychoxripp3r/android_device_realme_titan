@@ -110,6 +110,11 @@ service readahead_init /vendor/bin/sh /vendor/bin/swap_enable.sh configure_read_
     oneshot
 #endif
 
+
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+
 on fs
     write /proc/bootprof "INIT:fs"
 
