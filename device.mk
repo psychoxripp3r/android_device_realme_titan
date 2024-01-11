@@ -156,6 +156,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor
 
 
+
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -388,8 +389,8 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
-    android.hardware.usb.gadget@1.1.vendor
-
+    android.hardware.usb.gadget@1.1.vendor \
+    android.hardware.usb-service.mediatek
 
 
 # Wi-Fi
