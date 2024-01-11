@@ -17,6 +17,7 @@ static const variant_info_t titan_global_info = {
 
     .brand = "Realme",
     .device = "titan",
+    .mod_device = "titan_global",
     .marketname = "Realme 10 Pro Plus 5G",
     .model = "rmx3686",
     .build_fingerprint = "realme/titan/titan:12/SP1A.210812.016/1695642825420:user/release-keys"
