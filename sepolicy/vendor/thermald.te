@@ -35,4 +35,4 @@ allow thermald {
   lnk_file
 } rw_file_perms;
 
-set_prop(thermald, thermal_engine_prop)
+set_prop(thermald, vendor_thermal_engine_prop)
