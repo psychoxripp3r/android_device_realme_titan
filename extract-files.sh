@@ -33,18 +33,18 @@ SECTION=
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -n | --no-cleanup )
-                CLEAN_VENDOR=false
-                ;;
+            CLEAN_VENDOR=false
+            ;;
         -k | --kang )
-                KANG="--kang"
-                ;;
+            KANG="--kang"
+            ;;
         -s | --section )
-                SECTION="${2}"; shift
-                CLEAN_VENDOR=false
-                ;;
+            SECTION="${2}"; shift
+            CLEAN_VENDOR=false
+            ;;
         * )
-                SRC="${1}"
-                ;;
+            SRC="${1}"
+            ;;
     esac
     shift
 done
@@ -53,32 +53,28 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-
 function blob_fixup {
-	    case "$1" in
-	    		vendor/bin/hw/android.hardware.gnss-service.mediatek |\
-       			vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
-           					 "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
-            							;;
-	            vendor/lib*/hw/vendor.mediatek.hardware.pq@2.14-impl.so)
-	                        "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
-	                                    ;;
+    case "$1" in
+        vendor/bin/hw/android.hardware.gnss-service.mediatek |\
+        vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
+            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
+            ;;
+        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.14-impl.so)
+            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            ;;
 
-	            vendor/lib*/libmtkcam_stdutils.so)
-            			  "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
-           							    ;;                        
+        vendor/lib*/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            ;;
 
-           		lib64/libsink.so)
-            			  "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
-           							    ;;
-                vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
-                         sed -i 's/start/enable/' "$2"
-                                        ;;
-	                                        esac
-	                                        }
-}]
-
-
+        lib64/libsink.so)
+            "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+            ;;
+        vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
+    esac
+}
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
@@ -86,3 +82,4 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
+
