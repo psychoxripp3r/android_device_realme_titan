@@ -9,7 +9,7 @@
 set -e
 
 DEVICE=titan
-VENDOR=realme
+VENDOR=oplus
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
